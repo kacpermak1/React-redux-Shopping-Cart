@@ -112,7 +112,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     return this;
   }
-
   function cash(selector, context) {
     return new Init(selector, context);
   }

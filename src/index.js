@@ -5,6 +5,8 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import cartReducer from './Components/reducers/cartReducer';
+import './materialize-src/sass/materialize.scss';
+import './scss/main.scss';
 
 const store = createStore(
     cartReducer,

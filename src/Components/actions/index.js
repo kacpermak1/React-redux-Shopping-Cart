@@ -25,3 +25,15 @@ export const subtractQuantity = (id) => {
         id
     }
 }
+
+export const addShipping = () => {
+    return {
+        type: "ADD_SHIPPING",
+    }
+}
+
+export const subtractShipping = () => {
+    return {
+        type: "SUBTRACT_SHIPPING",
+    }
+}
