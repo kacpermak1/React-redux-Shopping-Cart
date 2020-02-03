@@ -1,6 +1,6 @@
 # Shopping Cart
 
-## React - redux workshop
+## With react - redux
 
 ## Used
 
@@ -8,5 +8,9 @@
 - React
 - SASS
 - Materialize
-- redux
-- router
+- react-redux
+- react-router
+
+## Preview:
+
+Check the preview here: *https://kacpermak1.github.io/Shopping-Cart/*

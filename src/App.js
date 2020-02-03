@@ -10,7 +10,7 @@ import {
 
 function App() {
   return (
-    <Router>
+    <Router basename='Shopping-Cart'>
       <Nav />
       <Switch>
         <Route exact path="/" component={Home} ></Route>
