@@ -4,8 +4,13 @@ import { addShipping, subtractShipping } from './actions'
 
 class Checkout extends Component {
 
+    constructor(props){
+        super(props)
+        this.inputRef = React.createRef()
+    }
+
     componentWillUnmount() {
-        if (this.refs.shipping.checked)
+        if (this.inputRef.current.checked)
             this.props.subtractShipping()
     }
 
@@ -25,7 +30,7 @@ class Checkout extends Component {
                 <div className="collection">
                     <li className="collection-item">
                         <label>
-                            <input type="checkbox" ref="shipping" onChange={this.handleChecked} />
+                            <input type="checkbox" ref={this.inputRef} onChange={this.handleChecked} />
                             <span>Shipping(+6$)</span>
                         </label>
                     </li>

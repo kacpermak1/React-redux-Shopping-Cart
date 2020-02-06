@@ -21,9 +21,9 @@ class Cart extends Component {
     render() {
         let addedItems = this.props.items.length ? (this.props.items.map(item => {
             return (
-                <li className="collection-item avatar" key={item.id}>
+                <li className="collection-item avatar col s12" key={item.id} style={{paddingLeft:"10px"}}>
                     <div className="item-img">
-                        <img src={item.img} alt={item.img} className="" />
+                        <img src={item.img} alt={item.img} className="responsive-img" />
                     </div>
 
                     <div className="item-desc">
@@ -48,7 +48,7 @@ class Cart extends Component {
             <div className="container">
                 <div className="cart">
                     <h5>You have ordered:</h5>
-                    <ul className="collection">
+                    <ul className="collection row">
                         {addedItems}
                     </ul>
                 </div>

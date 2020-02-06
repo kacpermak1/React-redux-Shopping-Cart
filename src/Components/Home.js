@@ -12,10 +12,10 @@ class Home extends Component {
 
         let itemList = this.props.items.map(item => {
             return (
-                <div className="col s4" key={item.id}>
+                <div className="col s12 m4" key={item.id}>
                     <div className="card" >
                         <div className="card-image">
-                            <img src={item.img} alt={item.title} />
+                            <img src={item.img} alt={item.title} className="responsive-img" />
                             <span className="card-title">{item.title}</span>
                             <span onClick={() => { this.handleClick(item.id) }} to="/" className="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">add</i></span>
                         </div>
@@ -28,7 +28,6 @@ class Home extends Component {
                 </div>
             )
         })
-
         return (
             <div className="container">
                 <h2 className="center">Shop</h2>
